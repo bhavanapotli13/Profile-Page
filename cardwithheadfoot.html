@@ -1,0 +1,432 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/c01066b9d9.js" crossorigin="anonymous"></script>
+
+<style>
+
+
+/* header and footer*/
+  .navbar-style{
+  padding: 1rem 2rem;
+  background: #000033;
+}
+.logo{
+  height:3rem;
+}
+.nav-item{
+  margin: 0.3rem 1rem;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+.header-link{
+  font-size: 1.2rem;
+  color:#fff;
+}
+.header-link:hover{
+  color:#b0c4de;
+}
+.search-btn{
+  border: #fff thin solid;
+  color: #fff;
+  background: #000033;
+  transition: 0.5s;
+}
+.search-btn:hover{
+  background: #fff;
+  color:#000033;
+}
+.nav-drop-div{
+  border-radius: 0;
+  padding: 0;
+}
+.nav-drop-item{
+  font-size: 1.2rem;
+  color:#fff;
+  background-color:#000033;
+  transition: 0.3s;
+}
+.nav-drop-item:hover{
+  color:#000033;
+  background-color: #fff;
+}
+
+
+
+
+
+#footer{
+  background: #000033;
+  padding: 2rem;
+  color:#fff;
+}
+#footer .row{
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+.with-logo{
+  text-align: center;
+}
+.footer-logo{
+  /* margin: 2rem auto; */
+}
+.contact-list{
+  margin-top: 1rem;
+  list-style: none;
+  padding: 0;
+}
+.footer-heading{
+  margin-top: 1rem;
+  font-size: 19px;
+  font-weight: 600rem;
+}
+.important-links{
+  margin-top: 1rem;
+  list-style: none;
+}
+#footer li{
+  font-size: 16px;
+  color: #fff;
+  padding-left: 1rem;
+  text-align: left;
+}
+#footer li a{
+  color:#fff;
+  transition: 0.3s;
+}
+.link-icon{
+  font-size: 0.8rem;
+}
+#footer li a:hover{
+  text-decoration: none;
+  color: #b0c4de;
+  padding-left: 0.5rem;
+}
+.connect-with{
+  padding-left: 4rem;
+}
+.connect-with h2{
+  margin-bottom: 1.5rem;
+}
+.connect-with p{
+  padding-left: 1rem;
+}
+
+.circular-icon{
+  height: 2rem;
+  width: 2rem;
+  font-size:1.5rem;
+  padding: 0.3rem 0.5rem;
+  margin-right: 0.5rem;
+  color: black;
+  background: #fff;
+  border-radius: 100%;
+  position: relative;
+}
+.special-icon-1{
+  padding: 0.3rem 0.8rem;
+}
+.special-icon-2{
+  padding:0.3rem 0.6rem;
+}
+.circular-icon:hover{
+  color:#000033;
+  top:-0.2rem;
+}
+#footer hr{
+  width: 30%;
+  border-bottom: none;
+  border-top: thin #fff solid;
+}
+.copyright-div{
+  text-align: center;
+}
+/*card*/
+.main-row{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.col-main-card
+{
+  margin-bottom: 2rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  padding: 0;
+  margin-bottom: 2rem;
+  position: relative;
+  transition: 0.3s;
+}
+.col-main-card:hover{
+  box-shadow: 3px 8px 3px 3px grey;
+  top:-0.5rem;
+}
+</style>
+<style>
+</head>
+<body>
+  <!--header code-->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-style">
+    <a class="navbar-brand" href="#"><img class="logo" src="clogo.png" alt="Cambridge-logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      <!-- <i class="fas fa-bars navbar-toggler-icon toggle-icon"></i> -->
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link header-link" href="https://cambridge.edu.in/" target="_blank">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle header-link" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Department
+          </a>
+          <div class="dropdown-menu nav-drop-div" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item nav-drop-item" href="#" target="_blank">Basic Sciences</a>
+            <a class="dropdown-item nav-drop-item" href="#" target="_blank">Civil Engineering</a>
+             <a class="dropdown-item nav-drop-item" href="#" target="_blank">Computer Science and Engineering</a>
+            <a class="dropdown-item nav-drop-item" href="#" target="_blank">Electronics and Communication Engineering</a>
+            <a class="dropdown-item nav-drop-item" href="#" target="_blank">Electronics and Electrical Engineering</a>
+            <a class="dropdown-item nav-drop-item" href="#" target="_blank">Information Science and Engineering</a>
+            <a class="dropdown-item nav-drop-item" href="#" target="_blank">Mechanical Engineering</a>
+            <a class="dropdown-item nav-drop-item" href="#" target="_blank">Master of Business Administration</a>
+            <a class="dropdown-item nav-drop-item" href="#" target="_blank">Master of Computer Application</a>
+
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link header-link" href="https://cambridge.edu.in/about" target="_blank">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link header-link" href="https://cambridge.edu.in/contact-us" target="_blank">Contact Us</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn my-2 my-sm-0 search-btn" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+<br>
+<!--header end-->
+<!--content code starts here-->
+
+<div class="container">
+<h2 style="text-align:center;">Department of Information Science and Engineering </h2>
+  <div class="row main-row">
+    <!--card starts-->
+    <div class="col-lg-2 card col-main-card">
+
+       <!-- <div class="card"> -->
+    <a href="ise_hod.html">
+    <img class="card-img-top" src="ise_hod.jpg" alt="Dr.K.Satyanarayan" style="width:100% "/>
+  </a>
+    <div class="card-body">
+      <p class="card-title"> <b> Dr. K. Satyanarayan Reddy</b></p>
+      <p class="card-text">Professor and HOD</p>
+
+    </div>
+  <!-- </div> -->
+    </div><!--card ends-->
+
+    <!--card starts-->
+    <div class="col-lg-2 card col-main-card">
+
+       <!-- <div class="card"> -->
+    <a href="ise_hod.html">
+    <img class="card-img-top" src="kk.jpg" alt="Prof KK " style="width:100% "/>
+  </a>
+    <div class="card-body">
+      <p class="card-title"><b>Mr. Krishna Kumar P.R</b></p>
+      <p class="card-text">Associate Professor</p>
+
+    </div>
+  <!-- </div> -->
+    </div><!--card ends-->
+    <!--card starts-->
+    <div class="col-lg-2 card col-main-card">
+
+       <!-- <div class="card"> -->
+    <a href="preethi.html">
+    <img class="card-img-top" src="preethi.jpg" alt="Ms. Preethi S" style="width:100% "/>
+  </a>
+    <div class="card-body">
+      <p class="card-title"><b>Ms. Preethi S </b></p>
+      <p class="card-text">Associate Professor</p>
+
+    </div>
+  <!-- </div> -->
+    </div><!--card ends-->
+    <!--card starts-->
+    <div class="col-lg-2 card col-main-card">
+
+       <!-- <div class="card"> -->
+    <a href="sapna.html">
+    <img class="card-img-top" src="sapna.jpg" alt="Ms. Sapna" style="width:100% "/>
+  </a>
+    <div class="card-body">
+      <p class="card-title"><b>Ms. Sapna</b></p>
+      <p class="card-text">Assistant Professor</p>
+
+    </div>
+  <!-- </div> -->
+    </div><!--card ends-->
+    <!--card starts-->
+    <div class="col-lg-2 card col-main-card">
+
+       <!-- <div class="card"> -->
+    <a href="deepthi.html">
+    <img class="card-img-top" src="deepthi.jpg" alt="Ms. Deepthi S" style="width:100% "/>
+  </a>
+    <div class="card-body">
+      <p class="card-title"><b>Ms. Deepthi S</b></p>
+      <p class="card-text">Assistant Professor</p>
+
+    </div>
+  <!-- </div> -->
+    </div><!--card ends-->
+    <!--card starts-->
+    <div class="col-lg-2 card col-main-card">
+
+       <!-- <div class="card"> -->
+    <a href="vinayaka.html">
+    <img class="card-img-top" src="vinayaka.jpg" alt="Mr. Vinayaka S P" style="width:100% "/>
+  </a>
+    <div class="card-body">
+      <p class="card-title"><b>Mr. Vinayaka S P </b></p>
+      <p class="card-text">Assistant Professor</p>
+
+    </div>
+  <!-- </div> -->
+    </div><!--card ends-->
+    <!--card starts-->
+    <div class="col-lg-2 card col-main-card">
+
+       <!-- <div class="card"> -->
+    <a href="bharani.html">
+    <img class="card-img-top" src="bharani.jpg" alt="Ms. Bharani B R" style="width:100% "/>
+  </a>
+    <div class="card-body">
+      <p class="card-title"><b>Ms. Bharani B R</b></h4>
+      <p class="card-text">Assistant Professor</p>
+
+    </div>
+  <!-- </div> -->
+    </div><!--card ends-->
+
+ <!--card starts-->
+    <div class="col-lg-2 card col-main-card">
+
+       <!-- <div class="card"> -->
+    <a href="santosh.html">
+    <img class="card-img-top" src="santosh.jpg" alt="Mr. Santosh M" style="width:100% "/>
+  </a>
+    <div class="card-body">
+      <p class="card-title"><b>Mr. Santosh M</b></p>
+      <p class="card-text">Assistant Professor</p>
+
+    </div>
+  <!-- </div> -->
+    </div><!--card ends-->
+
+     <!--card starts-->
+    <div class="col-lg-2 card col-main-card">
+
+       <!-- <div class="card"> -->
+    <a href="mamatha.html">
+    <img class="card-img-top" src="mamatha.jpg" alt="Ms. Mamatha S" style="width:100% "/>
+  </a>
+    <div class="card-body">
+      <p class="card-title"><b>Ms. Mamatha S</b></p>
+      <p class="card-text">Assistant Professor</p>
+
+    </div>
+  <!-- </div> -->
+    </div><!--card ends-->
+
+<!--card starts-->
+    <div class="col-lg-2 card col-main-card">
+
+       <!-- <div class="card"> -->
+    <a href="priyanka.html">
+    <img class="card-img-top" src="priyanka.jpg" alt="Ms.Priyanka R " style="width:100% "/>
+  </a>
+    <div class="card-body">
+      <p class="card-title"><b>Ms.Priyanka R</b></p>
+      <p class="card-text">Assistant Professor</p>
+
+    </div>
+  <!-- </div> -->
+    </div><!--card ends-->
+
+
+
+
+  </div><!--close of coloumn-->
+</div><!--close of container-->
+
+<!--footer-->
+<section id="footer">
+  <div class="container-fluid row">
+    <div class="col-lg-3 with-logo">
+      <a href="#"><img class="footer-logo" src="flogo.png" alt="clogo-img"></a><br>
+      <ul class="contact-list">
+        <li><i class="fas fa-map-marker-alt"></i> Krishnarajapuram, Bengaluru - 560 036</li>
+        <li><i class="fas fa-envelope"></i> info@cambridge.edu.in</li>
+        <li><i class="fas fa-phone-alt"></i> 080-25618798 | 08025618799 </li>
+      </ul>
+    </div>
+    <div class="col-lg-3">
+      <h2 class="footer-heading">Our Institute</h2>
+      <ul class="important-links">
+
+        <li><a href="https://engg.cambridge.edu.in/" target="_blank"> <i class="fas fa-greater-than link-icon"></i> Main Campus</a> </li>
+        <li><a href="https://northcampus.cambridge.edu.in/" target="_blank"> <i class="fas fa-greater-than link-icon"></i> North Campus</a> </li>
+        <li><a href="https://degree.cambridge.edu.in/" target="_blank"> <i class="fas fa-greater-than link-icon"></i> Cambridge College</a> </li>
+        <li><a href="https://pu.cambridge.edu.in/" target="_blank"> <i class="fas fa-greater-than link-icon"></i> Cambridge PU College</a> </li>
+        <li><a href="https://www.cambridge-school.edu.in/" target="_blank"> <i class="fas fa-greater-than link-icon"></i> Cambridge School</a> </li>
+      </ul>
+    </div>
+    <div class="col-lg-3">
+      <h2 class="footer-heading">Important Links</h2>
+      <ul class="important-links">
+
+        <li><a href="https://www.cambridge.edu.in/research" target="_blank"> <i class="fas fa-greater-than link-icon"></i> Research</a> </li>
+        <li><a href="https://engg.cambridge.edu.in/admissions" target="_blank"> <i class="fas fa-greater-than link-icon"></i> Admissions</a> </li>
+        <li><a href="https://www.cambridge.edu.in/placements" target="_blank"> <i class="fas fa-greater-than link-icon"></i> Placements</a> </li>
+        <li><a href="https://engg.cambridge.edu.in/nirf" target="_blank"> <i class="fas fa-greater-than link-icon"></i> NIRF</a> </li>
+        <li><a href="https://www.cambridge.edu.in/current-students" target="_blank"> <i class="fas fa-greater-than link-icon"></i> Current Students</a> </li>
+        <li><a href="https://cambridge.edu.in/online-learning" target="_blank"> <i class="fas fa-greater-than link-icon"></i> Online Learning</a> </li>
+      </ul>
+    </div>
+    <div class="col-lg-3 connect-with">
+      <h2 class="footer-heading">Connect with us:</h2>
+        <a href="https://www.facebook.com/citech.official/" class="circular-icon special-icon-1" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/citechbengaluru" class="circular-icon" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/school/cambridge-institute-of-technology1/" class="circular-icon special-icon-2" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/cit.bengaluru/" class="circular-icon special-icon-2" target="_blank"><i class="fab fa-instagram"></i></a>
+      </p>
+    </div>
+  </div>
+  <hr>
+  <div class="copyright-div">
+    <small class="copyright-text">Copyright © 2020 Cambridge Group Of Institutes.</small>
+  </div>
+</section>
+
+</body>
+
+</html>

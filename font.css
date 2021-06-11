@@ -1,0 +1,198 @@
+/* Add here all your CSS customizations */                                      
+
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.tp-bgimg.defaultimg {
+    background-size: 100% 100% !important;
+}
+.tp-bgimg.defaultimg {
+    background-size: contain !important;
+}
+p {
+	font-size: 17px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+ {font-family: 'Merriweather', serif;
+	letter-spacing: 0.1px;
+	color: #0b0038;
+	margin-bottom: 15px;
+}
+h3 {
+  font-size: 1.2em;
+}
+h4 {
+    
+     font-size: 1.1rem;
+}
+
+
+/* header and footer*/
+  .navbar-style{
+  padding: 1rem 2rem;
+  background: #000033;
+}
+.logo{
+  height:3rem;
+}
+.nav-item{
+  margin: 0.3rem 1rem;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+.header-link{
+  font-size: 1.2rem;
+  color:#fff;
+}
+.header-link:hover{
+  color:#b0c4de;
+}
+.search-btn{
+  border: #fff thin solid;
+  color: #fff;
+  background: #000033;
+  transition: 0.5s;
+}
+.search-btn:hover{
+  background: #fff;
+  color:#000033;
+}
+.nav-drop-div{
+  border-radius: 0;
+  padding: 0;
+}
+.nav-drop-item{
+  font-size: 1.2rem;
+  color:#fff;
+  background-color:#000033;
+  transition: 0.3s;
+}
+.nav-drop-item:hover{
+  color:#000033;
+  background-color: #fff;
+}
+
+
+
+
+
+#footer{
+  background: #000033;
+  padding: 2rem;
+  color:#fff;
+}
+#footer .row{
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+.with-logo{
+  text-align: center;
+}
+.footer-logo{
+  /* margin: 2rem auto; */
+}
+.contact-list{
+  margin-top: 1rem;
+  list-style: none;
+  padding: 0;
+}
+.footer-heading{
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600rem;
+}
+.important-links{
+  margin-top: 1rem;
+  list-style: none;
+}
+#footer li{
+  font-size: 1.2rem;
+  color: #fff;
+  padding-left: 1rem;
+  text-align: left;
+}
+#footer li a{
+  color:#fff;
+  transition: 0.3s;
+}
+.link-icon{
+  font-size: 0.8rem;
+}
+#footer li a:hover{
+  text-decoration: none;
+  color: #b0c4de;
+  padding-left: 0.5rem;
+}
+.connect-with{
+  padding-left: 4rem;
+}
+.connect-with h2{
+  margin-bottom: 1.5rem;
+}
+.connect-with p{
+  padding-left: 1rem;
+}
+
+.circular-icon{
+  height: 2rem;
+  width: 2rem;
+  font-size:1.5rem;
+  padding: 0.3rem 0.5rem;
+  margin-right: 0.5rem;
+  color: black;
+  background: #fff;
+  border-radius: 100%;
+  position: relative;
+}
+.special-icon-1{
+  padding: 0.3rem 0.8rem;
+}
+.special-icon-2{
+  padding:0.3rem 0.6rem;
+}
+.circular-icon:hover{
+  color:#000033;
+  top:-0.2rem;
+}
+#footer hr{
+  width: 30%;
+  border-bottom: none;
+  border-top: thin #fff solid;
+}
+.copyright-div{
+  text-align: center;
+}
+/*end of header and footer styles*/
+
+div#pcontent
+{
+margin-left:300px;
+text-align:justify;
+}
+
+
+div.pcontainer {
+  border: 3px solid lighter;     
+  float:left;
+}
+div >table {     
+    table-layout:fixed;
+    width:270px; 
+text-align:center;	
+}
+td
+{
+align:center;
+}
+
+
+
